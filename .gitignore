@@ -1,0 +1,5 @@
+venv/
+venv12/
+Learning/
+frontend/node_modules
+RAGProject/.env
