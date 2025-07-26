@@ -79,98 +79,106 @@
 
 ---
 
-## 📸 Application Screenshots
+## 📸 Application Screenshots & Demo
 
-### 🎯 Authentication & User Management
+### 🎯 Authentication System (React Frontend)
 <div align="center">
 <table>
 <tr>
-<td align="center" width="33%">
-<h4>🔐 User Registration</h4>
+<td align="center" width="50%">
+<h4>🚪 User Login</h4>
 <br>
-<i>📷 [Photo 1: User Registration Interface]</i>
+<img src="login.png" alt="Login Interface" width="400"/>
 <br><br>
-<em>Secure user registration with email validation and password strength requirements</em>
+<em>Clean and intuitive login interface with email/password authentication and JWT token generation</em>
 </td>
-<td align="center" width="33%">
-<h4>🚪 Login Portal</h4>
+<td align="center" width="50%">
+<h4>📝 User Registration</h4>
 <br>
-<i>📷 [Photo 2: Login Interface]</i>
+<img src="signup.png" alt="Signup Interface" width="400"/>
 <br><br>
-<em>JWT-based authentication system with token management</em>
-</td>
-<td align="center" width="33%">
-<h4>👤 User Dashboard</h4>
-<br>
-<i>📷 [Photo 3: User Dashboard]</i>
-<br><br>
-<em>Personalized dashboard showing user documents and activity</em>
+<em>Secure user registration with form validation, password strength requirements, and instant feedback</em>
 </td>
 </tr>
 </table>
 </div>
 
-### 📄 Document Management System
+### 🗄️ Database Management & Backend
 <div align="center">
 <table>
 <tr>
 <td align="center" width="50%">
-<h4>📤 Document Upload</h4>
+<h4>💾 SQLite Database</h4>
 <br>
-<i>📷 [Photo 4: Document Upload Interface]</i>
+<img src="sqlite.png" alt="SQLite Database View" width="400"/>
 <br><br>
-<em>Drag-and-drop document upload with progress tracking and format validation</em>
-</td>
-<td align="center" width="50%">
-<h4>📋 Document Library</h4>
-<br>
-<i>📷 [Photo 5: Document Management]</i>
-<br><br>
-<em>Comprehensive document library with search, filter, and organization features</em>
-</td>
-</tr>
-</table>
-</div>
-
-### 🗄️ Database Management
-<div align="center">
-<table>
-<tr>
-<td align="center" width="50%">
-<h4>🔍 SQLite Database</h4>
-<br>
-<i>📷 [Photo 6: SQLite Database View]</i>
-<br><br>
-<em>SQLite database showing user tables, document metadata, and relationships</em>
+<em>SQLite database structure showing user tables, document metadata, relationships, and stored data</em>
 </td>
 <td align="center" width="50%">
 <h4>🌲 Pinecone Vector Database</h4>
 <br>
-<i>📷 [Photo 7: Pinecone Dashboard]</i>
+<img src="pinecone.png" alt="Pinecone Dashboard" width="400"/>
 <br><br>
-<em>Pinecone vector database with embeddings, indexes, and vector statistics</em>
+<em>Pinecone vector database displaying uploaded documents, embeddings, and vector search capabilities</em>
 </td>
 </tr>
 </table>
 </div>
 
-### 🤖 RAG Query System
+### 📄 Document Management System (React Frontend)
 <div align="center">
 <table>
 <tr>
 <td align="center" width="50%">
-<h4>💬 Question Interface</h4>
+<h4>📋 My Documents Dashboard</h4>
 <br>
-<i>📷 [Photo 8: Query Interface]</i>
+<img src="mydocs.png" alt="Documents Dashboard" width="400"/>
 <br><br>
-<em>Interactive query interface with context selection and parameter tuning</em>
+<em>RAG document system dashboard after login, showing user's document library and management options</em>
 </td>
 <td align="center" width="50%">
-<h4>📊 AI Response & Analytics</h4>
+<h4>📤 Create New Document</h4>
 <br>
-<i>📷 [Photo 9: Response Dashboard]</i>
+<img src="create_documents.png" alt="Create Document Interface" width="400"/>
 <br><br>
-<em>AI-generated responses with source attribution, confidence scores, and analytics</em>
+<em>Document creation interface with title, content fields, and upload functionality</em>
+</td>
+</tr>
+</table>
+</div>
+
+### 📚 Document Library & Upload System
+<div align="center">
+<table>
+<tr>
+<td align="center" width="100%">
+<h4>📁 Uploaded Documents Library</h4>
+<br>
+<img src="uploaded.png" alt="Uploaded Documents" width="600"/>
+<br><br>
+<em>Comprehensive view of all uploaded documents with metadata, timestamps, and management actions</em>
+</td>
+</tr>
+</table>
+</div>
+
+### 🤖 RAG Query & AI Response System (React Frontend)
+<div align="center">
+<table>
+<tr>
+<td align="center" width="50%">
+<h4>🔍 Document Query Interface</h4>
+<br>
+<img src="query.png" alt="Query Interface" width="400"/>
+<br><br>
+<em>Interactive query interface where users can ask questions about their uploaded documents</em>
+</td>
+<td align="center" width="50%">
+<h4>🧠 AI-Powered Responses</h4>
+<br>
+<img src="airesponse.png" alt="AI Response Interface" width="400"/>
+<br><br>
+<em>Intelligent AI responses with context from documents, source attribution, and confidence indicators</em>
 </td>
 </tr>
 </table>
@@ -577,7 +585,7 @@ If this project helped you, please consider giving it a ⭐ on GitHub!
 
 <div align="center">
 
-**Built with ❤️ by the RAG App Team**
+**Built with ❤️ by the Rajnish**
 
 *Empowering intelligent document interactions through advanced AI*
 
