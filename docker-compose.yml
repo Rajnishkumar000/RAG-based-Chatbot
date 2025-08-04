@@ -1,24 +1,47 @@
+# version: "3.9"
+
+# services:
+#   backend:
+#     build:
+#       context: ./RAGProject
+#     container_name: rag_backend
+#     ports:
+#       - "8000:8000"
+#     env_file:
+#       - ./RAGProject/.env  # or .env.example if using that
+#     volumes:
+#       - ./RAGProject:/app
+#     depends_on:
+#       - frontend
+
+#   frontend:
+#     build:
+#       context: ./frontend
+#     container_name: rag_frontend
+#     ports:
+#       - "3000:80"  # 3000 for local access, 80 inside nginx container
+#     volumes:
+#       - ./frontend:/app
+
 version: "3.9"
 
 services:
-  backend:
+  app:
     build:
-      context: ./RAGProject
-    container_name: rag_backend
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_fullstack_app
     ports:
-      - "8000:8000"
+      - "3000:80"    # Frontend (React via nginx)
+      - "8000:8000"  # Backend API (FastAPI)
     env_file:
-      - ./RAGProject/.env  # or .env.example if using that
+      - ./RAGProject/.env
     volumes:
+      # Only mount for development - remove in production
       - ./RAGProject:/app
-    depends_on:
-      - frontend
-
-  frontend:
-    build:
-      context: ./frontend
-    container_name: rag_frontend
-    ports:
-      - "3000:80"  # 3000 for local access, 80 inside nginx container
-    volumes:
-      - ./frontend:/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80", "||", "exit", "1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

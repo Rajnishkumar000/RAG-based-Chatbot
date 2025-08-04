@@ -1,0 +1,54 @@
+# Python
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/env
+**/venv
+**/.venv
+**/pip-log.txt
+**/pip-delete-this-directory.txt
+**/.tox
+**/.coverage
+**/.coverage.*
+**/.cache
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/*.log
+**/.git
+**/.mypy_cache
+**/.pytest_cache
+**/.hypothesis
+
+# Node.js
+**/node_modules
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.npm
+**/.eslintcache
+
+# IDE
+**/.vscode
+**/.idea
+**/*.swp
+**/*.swo
+**/*~
+
+# OS
+**/.DS_Store
+**/Thumbs.db
+
+# Project specific
+**/.env
+**/logs
+**/temp
+**/tmp
+
+# Keep only necessary files
+!RAGProject/
+!frontend/
+!RAGProject/requirements.txt
+!frontend/package*.json

@@ -88,14 +88,14 @@
 <td align="center" width="50%">
 <h4>🚪 User Login</h4>
 <br>
-<img src="login.png" alt="Login Interface" width="400"/>
+<img src="images/login.png" alt="Login Interface" width="400"/>
 <br><br>
 <em>Clean and intuitive login interface with email/password authentication and JWT token generation</em>
 </td>
 <td align="center" width="50%">
 <h4>📝 User Registration</h4>
 <br>
-<img src="signup.png" alt="Signup Interface" width="400"/>
+<img src="images/signup.png" alt="Signup Interface" width="400"/>
 <br><br>
 <em>Secure user registration with form validation, password strength requirements, and instant feedback</em>
 </td>
@@ -110,14 +110,14 @@
 <td align="center" width="50%">
 <h4>💾 SQLite Database</h4>
 <br>
-<img src="sqlite.png" alt="SQLite Database View" width="400"/>
+<img src="images/sqlite.png" alt="SQLite Database View" width="400"/>
 <br><br>
 <em>SQLite database structure showing user tables, document metadata, relationships, and stored data</em>
 </td>
 <td align="center" width="50%">
 <h4>🌲 Pinecone Vector Database</h4>
 <br>
-<img src="pinecone.png" alt="Pinecone Dashboard" width="400"/>
+<img src="images/pinecone.png" alt="Pinecone Dashboard" width="400"/>
 <br><br>
 <em>Pinecone vector database displaying uploaded documents, embeddings, and vector search capabilities</em>
 </td>
@@ -132,14 +132,14 @@
 <td align="center" width="50%">
 <h4>📋 My Documents Dashboard</h4>
 <br>
-<img src="mydocs.png" alt="Documents Dashboard" width="400"/>
+<img src="images/mydocs.png" alt="Documents Dashboard" width="400"/>
 <br><br>
 <em>RAG document system dashboard after login, showing user's document library and management options</em>
 </td>
 <td align="center" width="50%">
 <h4>📤 Create New Document</h4>
 <br>
-<img src="create_documents.png" alt="Create Document Interface" width="400"/>
+<img src="images/create_documents.png" alt="Create Document Interface" width="400"/>
 <br><br>
 <em>Document creation interface with title, content fields, and upload functionality</em>
 </td>
@@ -154,7 +154,7 @@
 <td align="center" width="100%">
 <h4>📁 Uploaded Documents Library</h4>
 <br>
-<img src="uploaded.png" alt="Uploaded Documents" width="600"/>
+<img src="images/uploaded.png" alt="Uploaded Documents" width="600"/>
 <br><br>
 <em>Comprehensive view of all uploaded documents with metadata, timestamps, and management actions</em>
 </td>
@@ -169,14 +169,14 @@
 <td align="center" width="50%">
 <h4>🔍 Document Query Interface</h4>
 <br>
-<img src="query.png" alt="Query Interface" width="400"/>
+<img src="images/query.png" alt="Query Interface" width="400"/>
 <br><br>
 <em>Interactive query interface where users can ask questions about their uploaded documents</em>
 </td>
 <td align="center" width="50%">
 <h4>🧠 AI-Powered Responses</h4>
 <br>
-<img src="airesponse.png" alt="AI Response Interface" width="400"/>
+<img src="images/airesponse.png" alt="AI Response Interface" width="400"/>
 <br><br>
 <em>Intelligent AI responses with context from documents, source attribution, and confidence indicators</em>
 </td>
