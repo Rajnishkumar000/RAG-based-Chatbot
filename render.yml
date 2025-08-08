@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rag-fullstack-app
+    env: docker
+    dockerfilePath: ./Dockerfile.render
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: NODE_VERSION
+        value: 18

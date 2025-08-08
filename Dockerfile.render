@@ -1,0 +1,40 @@
+# Render.com optimized Dockerfile
+FROM node:18-alpine as frontend-build
+WORKDIR /app/frontend
+COPY frontend/package*.json ./
+RUN npm ci --only=production --no-audit --no-fund --silent
+COPY frontend/ ./
+RUN npm run build && rm -rf node_modules /root/.npm /tmp/*
+
+FROM python:3.11-slim as production
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libmagic1 \
+    file \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
+# Install PyTorch CPU
+RUN pip install --no-cache-dir \
+    torch torchvision torchaudio \
+    --index-url https://download.pytorch.org/whl/cpu
+
+# Install Python dependencies
+COPY RAGProject/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt \
+    && rm -rf /root/.cache/pip
+
+# Copy backend code
+COPY RAGProject/app/ ./app/
+
+# Copy frontend build
+COPY --from=frontend-build /app/frontend/build ./static
+
+# Render expects the app to listen on $PORT
+ENV PORT=10000
+
+# Serve both frontend and backend
+CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
