@@ -268,3 +268,11 @@ HTTP response body: {"code":3,"message":"Metadata size is 94863 bytes, which exc
 2025-08-08 05:20:21 | INFO     | app.main:lifespan:22 - Database tables created
 2025-08-08 05:20:21 | INFO     | app.main:lifespan:25 - Application startup complete
 2025-08-08 05:24:16 | INFO     | app.main:lifespan:30 - Shutting down RAG Application...
+2025-08-08 06:14:30 | INFO     | app.main:lifespan:18 - Starting RAG Application...
+2025-08-08 06:14:30 | INFO     | app.main:lifespan:22 - Database tables created
+2025-08-08 06:14:30 | INFO     | app.main:lifespan:25 - Application startup complete
+2025-08-08 06:17:43 | INFO     | app.services.pinecone_service:delete_document:201 - Deleted document from Pinecone: doc_2_df60874d
+2025-08-08 06:17:43 | INFO     | app.services.rag_service:delete_document:134 - Deleted document from RAG system: programming_technical
+2025-08-08 06:17:49 | INFO     | app.services.pinecone_service:delete_document:201 - Deleted document from Pinecone: doc_1_a65a77db
+2025-08-08 06:17:49 | INFO     | app.services.rag_service:delete_document:134 - Deleted document from RAG system: jhbhj
+2025-08-08 06:18:04 | INFO     | app.main:lifespan:30 - Shutting down RAG Application...
